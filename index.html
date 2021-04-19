@@ -26,76 +26,23 @@
   <body>
 
     <nav class="navbar navbar-light" style="background-color: #1f9af2";>
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-          <!-- Toggle button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarRightAlignExample"
-            aria-controls="navbarRightAlignExample"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-      
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
-            <!-- Left links -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <!-- Navbar dropdown -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <!-- Dropdown menu -->
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
-            </ul>
-            <!-- Left links -->
-          </div>
-          <!-- Collapsible wrapper -->
-        </div>
-        <!-- Container wrapper -->
+       
+
       </nav>
     <div class="first">
       <h1>STRING CONVERTER</h1>
     </div>
 
     <div class="first">
-      <form action="/action_page.php">
-        <label for="fname">Enter the string </label>
-        <input type="text" id="fname" name="fname" />
-        <button type="button" class="btn btn-primary">Submit</button>
+      <form id="form">
+        <label for="stringfirst">Enter the string </label>
+        <input type="text" id="stringmain"/>
+        <button type="button" class="btn btn-primary" onclick="inputstring();">submit</button>
+       
       </form>
     </div>
+
+ 
 
     <div class="first">
       <h1>Select the desired case</h1>
@@ -106,19 +53,19 @@
         text-align: left;
         margin-left: auto;
         margin-right: auto;
-        width: 25%;
+        width: 40vw;
       "
     >
       <form action="/action_page.php">
        
        
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Upper Case <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Lower Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Pascal Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Snake Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Upper Case with Snake Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Kebab Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Camel Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="upper" value="1"> Upper Case <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="lower" value="2"> Lower Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="pascal" value="3"> Pascal Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="snake" value="4"> Snake Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="uppersnake" value="5" > Upper with Snake   <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="kebab" value="6"> Kebab Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="camel" value="7"> Camel Case  <br>
         <br />
         <br />
       </form>
@@ -128,11 +75,12 @@
 
     <div class="first">
       <h1>Press Convert</h1>
-      <button type="button" class="btn btn-primary">Convert</button>
+      <button type="button" class="btn btn-primary" onclick="Convert();">Convert</button>
     </div>
 
     <div class="first" style="margin-bottom: 5rem;">
       <h1>Converted String</h1>
+      <input type="text" id="stringconverted" name="" />
     </div>
 
 
