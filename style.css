@@ -1,0 +1,12 @@
+/* THIS IS CLASS FOR HEADING  */
+
+.first{
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* THIS IS CLASS FOR FORM  */

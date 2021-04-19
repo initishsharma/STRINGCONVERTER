@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <title>String Converter</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light" style="background-color: #1f9af2";>
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarRightAlignExample"
+            aria-controls="navbarRightAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <!-- Navbar dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+    <div class="first">
+      <h1>STRING CONVERTER</h1>
+    </div>
+
+    <div class="first">
+      <form action="/action_page.php">
+        <label for="fname">Enter the string </label>
+        <input type="text" id="fname" name="fname" />
+        <button type="button" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="first">
+      <h1>Select the desired case</h1>
+    </div>
+
+    <div
+      style="
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+      "
+    >
+      <form action="/action_page.php">
+       
+       
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Upper Case <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Lower Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Pascal Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Snake Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Upper Case with Snake Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Kebab Case  <br>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="Nitish" aria-label="X"/> Camel Case  <br>
+        <br />
+        <br />
+      </form>
+    </div>
+
+
+
+    <div class="first">
+      <h1>Press Convert</h1>
+      <button type="button" class="btn btn-primary">Convert</button>
+    </div>
+
+    <div class="first" style="margin-bottom: 5rem;">
+      <h1>Converted String</h1>
+    </div>
+
+
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #1f9af2;">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+           
+            <!-- Section: CTA -->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Nitish Sharma</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
