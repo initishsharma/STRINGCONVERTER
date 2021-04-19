@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Questrial&display=swap');
+      </style>
+
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -24,29 +29,29 @@
     <title>String Converter</title>
   </head>
   <body>
-
-    <nav class="navbar navbar-light" style="background-color: #1f9af2";>
-       
-
-      </nav>
+    <nav class="navbar navbar-light" style="background-color: #1f9af2" ;></nav>
     <div class="first">
-      <h1>STRING CONVERTER</h1>
+      <h1 style="font-family: Anton; letter-spacing: 2px;">STRING CONVERTER</h1>
     </div>
 
     <div class="first">
       <form id="form">
-        <label for="stringfirst">Enter the string </label> <br>
-        <input type="text" id="stringmain"/>
-        <div style="padding: 1rem;">
-        <button type="button" class="btn btn-primary" onclick="inputstring();">submit</button>
-      </div>
+        <label for="stringfirst">Enter the string </label> <br />
+        <input type="text" id="stringmain" />
+        <div style="padding: 1rem">
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="inputstring();"
+          >
+            submit
+          </button>
+        </div>
       </form>
     </div>
 
- 
-
     <div class="first">
-      <h1>Select the desired case</h1>
+      <h1 style="font-family: Questrial; ">Select the desired case</h1>
     </div>
 
     <div
@@ -58,52 +63,102 @@
       "
     >
       <form action="/action_page.php">
-       
-       
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="upper" value="1"> Upper Case <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="lower" value="2"> Lower Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="pascal" value="3"> Pascal Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="snake" value="4"> Snake Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="uppersnake" value="5" > Upper with Snake   <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="kebab" value="6"> Kebab Case  <br>
-        <input class="form-check-input" type="radio" name="radioNoLabel" id="camel" value="7"> Camel Case  <br>
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioNoLabel"
+          id="upper"
+          value="1"
+        />
+        Upper Case <br />
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioNoLabel"
+          id="lower"
+          value="2"
+        />
+        Lower Case <br />
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioNoLabel"
+          id="pascal"
+          value="3"
+        />
+        Pascal Case <br />
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioNoLabel"
+          id="snake"
+          value="4"
+        />
+        Snake Case <br />
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioNoLabel"
+          id="uppersnake"
+          value="5"
+        />
+        Upper with Snake <br />
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioNoLabel"
+          id="kebab"
+          value="6"
+        />
+        Kebab Case <br />
+        <input
+          class="form-check-input"
+          type="radio"
+          name="radioNoLabel"
+          id="camel"
+          value="7"
+        />
+        Camel Case <br />
         <br />
         <br />
       </form>
     </div>
 
-
-
     <div class="first">
-      <h1>Press Convert</h1>
-      <button type="button" class="btn btn-primary" onclick="Convert();">Convert</button>
+      <h1  style="font-family: Questrial; ">Press Convert</h1>
+      <button type="button" class="btn btn-primary" onclick="Convert();">
+        Convert
+      </button>
     </div>
 
-    <div class="first" style="margin-bottom: 5rem;">
-      <h1>Converted String</h1>
+    <div class="first" style="margin-bottom: 5rem">
+      <h1  style="font-family: Questrial; ">Converted String</h1>
       <input type="text" id="stringconverted" name="" />
     </div>
 
-
     <section class="">
-        <!-- Footer -->
-        <footer class="text-center text-white" style="background-color: #1f9af2;">
-          <!-- Grid container -->
-          <div class="container p-4 pb-0">
-           
-            <!-- Section: CTA -->
-          </div>
-          <!-- Grid container -->
-      
-          <!-- Copyright -->
-          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">Nitish Sharma</a>
-          </div>
-          <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
-      </section>
+      <!-- Footer -->
+      <footer class="text-center text-white" style="background-color: #1f9af2">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2021 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/"
+            >Nitish Sharma</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
 
     <script src="./script.js"></script>
   </body>
